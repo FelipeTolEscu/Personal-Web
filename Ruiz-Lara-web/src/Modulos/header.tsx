@@ -27,7 +27,7 @@ function Header() {
             </div>
             <header className="relative flex flex-col items-center justify-center h-screen mb-12 overflow-hidden">
                 <div className="relative z-30 pr-40 pl-40 text-center text-4xl sm:text-5xl md:text-6xl lg:text-xl xl:text-8xl text-white bg-opacity-50 rounded-xl align-middle">
-                    <h1 id='textTitle'>RUIZ LARA INGENIERÍA</h1>
+                    <h1 className='drop-shadow-lg shadow-black'>RUIZ LARA INGENIERÍA</h1>
                 </div>
                 <div className="relative z-30 pr-10 pl-10 text-center text-sm sm:text-xl md:text-lg lg:text-xl xl:text-3xl text-white bg-opacity-50 rounded-xl">
                     Estudio de ingeniería en Granada, líderes en todo tipo de instalaciones y consultoría
@@ -36,7 +36,7 @@ function Header() {
                     autoPlay
                     loop
                     muted
-                    className="absolute z-10 w-auto min-w-full min-h-full max-w-none"
+                    className="absolute z-10 w-auto min-w-full min-h-full max-w-none opacity-40"
                 >
                     <source
                         src={videoHeader}

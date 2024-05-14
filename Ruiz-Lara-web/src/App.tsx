@@ -5,12 +5,10 @@ import Header from './Modulos/header'
 function App() {
   return (
     <>
-      <div>
-        <Header />
-        <div className='h-96 bg-slate-50' >
+      <Header />
+      <section className='whitheSection'>
 
-        </div>
-      </div>
+      </section>
     </>
   )
 }
