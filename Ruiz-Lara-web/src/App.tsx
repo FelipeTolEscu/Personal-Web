@@ -7,8 +7,9 @@ function App() {
     <>
       <div>
         <Header />
-        <h1 className='text-center w-auto text-6xl'>Somos 
-        Ruiz Lara Ingeniería</h1>
+        <div className='h-96 bg-slate-50' >
+
+        </div>
       </div>
     </>
   )
