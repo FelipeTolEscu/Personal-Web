@@ -34,7 +34,7 @@ function tablePanel() {
     );
 
     const VideoComponent = () => (
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pb-8">
             <div className="bg-white rounded-lg p-4 sm:p-8 h-full shadow-2xl">
                 <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-800">Video de nuestras Instalaciones</h2>
                 <div className="video-container">
