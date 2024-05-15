@@ -7,6 +7,8 @@ import ProyectosIng from '../assets/Imagenes/proyectosIng.webp'
 import HouseIcon from '../assets/Imagenes/houseIcon.png'
 
 function tablePanel() {
+
+    //Video's
     const youtubeVideoUrl = "https://www.youtube.com/embed/dQw4w9WgXcQ"
 
     const ButtonComponent = () => (
