@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lexend:wght@100..900&display=swap');
 
 
-*{
- font-family: "Lexend", sans-serif;
+* {
+  font-family: "Lexend", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -15,9 +15,16 @@
   background-color: rgb(255, 255, 255);
 }
 
+.greenSection {
+  width: auto;
+  height: auto;
+  min-height: 20em;
+  background-color: #088c7c; /* Color verde Página Web */
+}
+
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   max-width: 100%;
