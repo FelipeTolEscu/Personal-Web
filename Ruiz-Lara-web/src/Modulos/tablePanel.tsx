@@ -72,25 +72,46 @@ function tablePanel() {
 
     const GreenPanel = () => (
         <div className="p-4 text-center">
-            <h1 className="text-4xl font-bold p-9 text-white">Nuestros Servicios</h1>
-            <h2 className="text-2xl mt-4 text-white pb-9">Los desafíos técnicos se afrontan con ayuda profesional</h2>
-            <div className="flex justify-center">
-                <div className="flex items-center">
-                    <div className="mr-4">
-                        <img src={HouseIcon} alt="Icon 1" className="w-8 h-8" />
-                    </div>
-                    <div className='text-white'>
-                        <p>Servicios de ingeniería de instalaciones</p>
+            <div>
+                <h1 className="text-5xl text-white">Nuestros Servicios</h1>
+            </div>
+            <div className="flex flex-wrap">
+                {/* Columna izquierda */}
+                <div className="w-full md:w-1/2 lg:w-2/3 flex justify-start items-center p-8 text-white">
+                    <div className="flex items-center space-x-2">
+                        <img src={HouseIcon} alt="House" className="h-20" />
+                        <h2 className="text-3xl">Servicios de ingeniería de instalaciones</h2>
                     </div>
                 </div>
-                <div className="flex items-center ml-8">
-                    <div className='text-white'>
-                    <h3 className="text- mt-4 text-white">Expertos altamente cualificados y con años de experiencia, ponen toda la atención para que tu proyecto cumpla con los objetivos que esperas.</h3>
-                    </div>
+            </div>
+            <div className="w-full md:w-1/2 lg:w-2/3 flex justify-start items-center p-8 text-white">
+                <div className="flex items-center space-x-2">
+                    <img src={HouseIcon} alt="House" className="h-20" />
+                    <h2 className="text-3xl">Servicios de ingeniería de instalaciones</h2>
+                </div>
+                
+            </div>
+             {/* Columna derecha */}
+                <div className="w-full md:w-1/2 lg:w-1/3 flex justify-start items-center p-8 text-white">
+                    <h2 className="text-3xl">Los desafíos técnicos se afrontan con ayuda profesional
+                        Expertos altamente cualificados y con años de experiencia, ponen toda la atención para que tu proyecto cumpla con los objetivos que esperas.</h2>
+                </div>
+            <div className="w-full md:w-1/2 lg:w-2/3 flex justify-start items-center p-8 text-white">
+                <div className="flex items-center space-x-2">
+                    <img src={HouseIcon} alt="House" className="h-20" />
+                    <h2 className="text-3xl">Servicios de ingeniería de instalaciones</h2>
+                </div>
+            </div>
+            <div className="w-full md:w-1/2 lg:w-2/3 flex justify-start items-center p-8 text-white">
+                <div className="flex items-center space-x-2">
+                    <img src={HouseIcon} alt="House" className="h-20" />
+                    <h2 className="text-3xl">Servicios de ingeniería de instalaciones</h2>
                 </div>
             </div>
         </div>
     );
+
+
 
     return (
         <>
