@@ -14,9 +14,9 @@ function tablePanel() {
     const ButtonComponent = () => (
         <div className="flex justify-center items-center p-4">
             <button
-                className="overflow-hidden w-auto p-2 h-12 bg-black text-white border-none rounded-md text-xl font-bold cursor-pointer relative z-10 group"
+                className="overflow-hidden w-auto pl-10 pr-10 h-12 bg-black text-white border-none rounded-md text-xl font-bold cursor-pointer relative z-10 group"
             >
-                Nuestros Proyectos !
+                Proyectos!
                 <span
                     className="absolute w-60 h-32 -top-8 -left-2 bg-green-200 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-bottom"
                 ></span>
@@ -38,7 +38,7 @@ function tablePanel() {
     const VideoComponent = () => (
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pb-8">
             <div className="bg-white rounded-lg p-4 sm:p-8 h-full shadow-2xl">
-                <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-800">Video de nuestras Instalaciones</h2>
+                <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-800">Pictocrono</h2>
                 <div className="video-container">
                     <iframe
                         src={youtubeVideoUrl}
@@ -49,15 +49,15 @@ function tablePanel() {
                 </div>
             </div>
             <div className="bg-white rounded-lg p-4 sm:p-8 h-full shadow-2xl">
-                <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-800">El mejor desarrollo</h2>
+                <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-800">Arena Pro Gaming</h2>
                 <img src={ProyectosIng} alt="Descripción de la imagen" className="w-full h-48 sm:h-72 object-cover" />
             </div>
             <div className="bg-white rounded-lg p-4 sm:p-8 h-full shadow-2xl">
-                <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-800">Imagenes Proyectos</h2>
+                <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-800">Ruiz Lara & Asociados</h2>
                 <img src={DesarrolloIng} alt="Descripción de la imagen" className="w-full h-48 sm:h-72 object-cover" />
             </div>
             <div className="bg-white rounded-lg p-4 sm:p-8 h-full shadow-2xl">
-                <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-800">Video de nuestros proyectos</h2>
+                <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-800">Busca Minas 2D</h2>
                 <div className="video-container">
                     <iframe
                         src={youtubeVideoUrl}
@@ -73,7 +73,7 @@ function tablePanel() {
     const GreenPanel = () => (
         <div className="p-4 text-center">
             <div>
-                <h1 className="text-5xl text-white">Nuestros Servicios</h1>
+                <h1 className="text-5xl text-white">Ver proyectos</h1>
             </div>
             <div className="flex flex-wrap">
                 {/* Columna izquierda */}
