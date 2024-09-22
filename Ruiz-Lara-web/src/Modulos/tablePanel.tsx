@@ -1,133 +1,95 @@
-//CSS Import
-import '../App.css'
+// CSS Import
+import "../App.css"; // Asegúrate de que los estilos básicos estén aquí
 
-//Import's
-import DesarrolloIng from '../assets/Imagenes/desarrolloIng.jpg'
-import ProyectosIng from '../assets/Imagenes/proyectosIng.webp'
-import HouseIcon from '../assets/Imagenes/houseIcon.png'
+// Import's
 
-function tablePanel() {
+function WeddingInvitation() {
+  // Datos útiles
+  const googleMapsUrl =
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7592.669255603838!2d-3.599956823697491!3d37.16501474704963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fca39dfd1317%3A0x4ee2978ee9d4ac76!2sHotel%20Saray%20Granada!5e1!3m2!1ses!2ses!4v1727003558817!5m2!1ses!2ses";
+  const weddingDate = "16/11/2024"; // Cambia la fecha aquí
+  const weddingTime = "19:30"; // Cambia la hora aquí
 
-    //Video's
-    const youtubeVideoUrl = "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  return (
+    <div className="flex justify-center items-center p-8 bg-white">
+      <div className="max-w-6xl bg-gray-100 p-4 rounded-2xl shadow-xl text-center">
+        {/* Título */}
+        <h1 className="text-4xl font-serif mb-8 p-9 text-gray-800">
+          ¡Estás cordialmente invitado a la boda de Isabel y Fernando!
+        </h1>
 
-    const ButtonComponent = () => (
-        <div className="flex justify-center items-center p-4">
-            <button
-                className="overflow-hidden w-auto pl-10 pr-10 h-12 bg-black text-white border-none rounded-md text-xl font-bold cursor-pointer relative z-10 group"
-            >
-                Proyectos!
-                <span
-                    className="absolute w-60 h-32 -top-8 -left-2 bg-green-200 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-bottom"
-                ></span>
-                <span
-                    className="absolute w-56 h-32 -top-8 -left-2 bg-green-400 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-bottom"
-                ></span>
-                <span
-                    className="absolute w-52 h-32 -top-8 -left-2 bg-green-600 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-bottom"
-                ></span>
-                <span
-                    className="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-6 z-10"
-                >
-                    Justo Aquí !
-                </span>
-            </button>
+        {/* Mensaje Principal */}
+        <p className="text-lg text-gray-700 mb-8">
+          Con enorme alegría, Isabel y Fernando se complacen en invitarles a
+          celebrar su unión en matrimonio. Acompáñanos a compartir este momento
+          lleno de amor y felicidad en un lugar que atesora la historia y la
+          belleza de Granada.
+        </p>
+
+        {/* Caja de la invitación */}
+        <div className="max-w-md mx-auto bg-white p-12 rounded-lg shadow-lg border border-gray-300 mb-10">
+          {/* Nombres de los novios */}
+          <p className="text-3xl font-serif text-gray-800 text-center pt-5">
+            Isabel & Fernando
+            <hr />
+          </p>
+
+          {/* Datos útiles */}
+          <div className="mt-6 mb-6">
+            <h2 className="text-xl  font-serif font-semibold mb-4 text-gray-800 text-center">
+             - Detalles del Evento
+            </h2>
+
+            {/* Fecha y Hora */}
+            <p className="text-lg text-gray-800 mb-4 text-center">
+              Fecha:{" "}
+              <span className="font-semibold text-gray-800">{weddingDate}</span>
+            </p>
+            <p className="text-lg text-gray-800 mb-8 text-center">
+              Hora:{" "}
+              <span className="font-semibold text-gray-800">{weddingTime}</span>
+            </p>
+            <h3 className="text-xl font-serif font-semibold text-gray-800 mb-2">
+              - Ubicación:
+            </h3>
+            <p className="text-gray-800 mb-4">Hotel Saray de Granada</p>
+          </div>
         </div>
-    );
 
-    const VideoComponent = () => (
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pb-8">
-            <div className="bg-white rounded-lg p-4 sm:p-8 h-full shadow-2xl">
-                <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-800">Pictocrono</h2>
-                <div className="video-container">
-                    <iframe
-                        src={youtubeVideoUrl}
-                        title="YouTube video player"
-                        className="w-full h-48 sm:h-72"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    ></iframe>
-                </div>
-            </div>
-            <div className="bg-white rounded-lg p-4 sm:p-8 h-full shadow-2xl">
-                <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-800">Arena Pro Gaming</h2>
-                <img src={ProyectosIng} alt="Descripción de la imagen" className="w-full h-48 sm:h-72 object-cover" />
-            </div>
-            <div className="bg-white rounded-lg p-4 sm:p-8 h-full shadow-2xl">
-                <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-800">Ruiz Lara & Asociados</h2>
-                <img src={DesarrolloIng} alt="Descripción de la imagen" className="w-full h-48 sm:h-72 object-cover" />
-            </div>
-            <div className="bg-white rounded-lg p-4 sm:p-8 h-full shadow-2xl">
-                <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-800">Busca Minas 2D</h2>
-                <div className="video-container">
-                    <iframe
-                        src={youtubeVideoUrl}
-                        title="YouTube video player"
-                        className="w-full h-48 sm:h-72"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    ></iframe>
-                </div>
-            </div>
+        {/* Ubicación con mapa */}
+
+        <div className="video-container mb-8">
+          <iframe
+            src={googleMapsUrl}
+            title="Ubicación del evento"
+            className="w-full h-80"
+            allowFullScreen
+          ></iframe>
         </div>
-    );
 
-    const GreenPanel = () => (
-        <div className="p-4 text-center">
-            <div>
-                <h1 className="text-5xl text-white">Ver proyectos</h1>
-            </div>
-            <div className="flex flex-wrap">
-                {/* Columna izquierda */}
-                <div className="w-full md:w-1/2 lg:w-2/3 flex justify-start items-center p-8 text-white">
-                    <div className="flex items-center space-x-2">
-                        <img src={HouseIcon} alt="House" className="h-20" />
-                        <h2 className="text-3xl">Servicios de ingeniería de instalaciones</h2>
-                    </div>
-                </div>
-            </div>
-            <div className="w-full md:w-1/2 lg:w-2/3 flex justify-start items-center p-8 text-white">
-                <div className="flex items-center space-x-2">
-                    <img src={HouseIcon} alt="House" className="h-20" />
-                    <h2 className="text-3xl">Servicios de ingeniería de instalaciones</h2>
-                </div>
-                
-            </div>
-             {/* Columna derecha */}
-                <div className="w-full md:w-1/2 lg:w-1/3 flex justify-start items-center p-8 text-white">
-                    <h2 className="text-3xl">Los desafíos técnicos se afrontan con ayuda profesional
-                        Expertos altamente cualificados y con años de experiencia, ponen toda la atención para que tu proyecto cumpla con los objetivos que esperas.</h2>
-                </div>
-            <div className="w-full md:w-1/2 lg:w-2/3 flex justify-start items-center p-8 text-white">
-                <div className="flex items-center space-x-2">
-                    <img src={HouseIcon} alt="House" className="h-20" />
-                    <h2 className="text-3xl">Servicios de ingeniería de instalaciones</h2>
-                </div>
-            </div>
-            <div className="w-full md:w-1/2 lg:w-2/3 flex justify-start items-center p-8 text-white">
-                <div className="flex items-center space-x-2">
-                    <img src={HouseIcon} alt="House" className="h-20" />
-                    <h2 className="text-3xl">Servicios de ingeniería de instalaciones</h2>
-                </div>
-            </div>
-        </div>
-    );
-
-
-
-    return (
-        <>
-            <section className='whitheSection flex justify-center items-center'>
-                <div className="container p-4 sm:p-10 py-8 w-full">
-                    <VideoComponent />
-                    <ButtonComponent />
-                </div>
-            </section>
-            <section className='greenSection flex justify-center items-center'>
-                <div className="container p-4 sm:p-10 py-8 w-full">
-                    <GreenPanel />
-                </div>
-            </section>
-        </>
-    );
+        {/* Información adicional */}
+        <p className="text-gray-800 mt-8">
+          Para más información o detalles adicionales, no dudes en contactarnos.
+          ¡Esperamos verte y compartir este día tan especial contigo!
+          <br />
+          <b>Tel: +34 640 37 93 41</b>
+        </p>
+      </div>
+    </div>
+  );
 }
 
-export default tablePanel;
+// Componente Principal
+function TablePanel() {
+  return (
+    <>
+      <section className="whiteSection flex justify-center items-center">
+        <div className="container p-4 sm:p-10 py-8 w-full">
+          <WeddingInvitation />
+        </div>
+      </section>
+    </>
+  );
+}
+
+export default TablePanel;
